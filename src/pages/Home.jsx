@@ -16,7 +16,10 @@ export default function Home() {
 
         <div className=" flex items-center gap-4">
           <Link to={"/sobre-nosotros"} className=" font-bold text-xl">
-            Sobre Nosotros
+            Sobre nosotros
+          </Link>
+          <Link to={"/contacto"} className=" font-bold text-xl">
+            Contacto
           </Link>
           <button
             onClick={() => {

@@ -13,22 +13,32 @@ export default function Productos() {
   }, []);
 
   return (
-    <div className=" flex flex-col items-center">
+    <div className=" flex flex-col items-center mt-4">
       <h1 className=" text-5xl font-bold">Productos</h1>
       <section className=" flex flex-wrap gap-4 justify-center mt-6">
         {products.map((product) => {
           return (
             <article
               key={`prod-${product.id}`}
-              className=" border border-black max-w-60 max-h-96 rounded-lg"
+              className=" border border-black max-w-60 max-h-80 rounded-lg "
             >
               <img className=" w-full h-2/5" src={product.thumbnail} alt="" />
-              <div className=" flex flex-col items-center gap-2">
-                <h3 className=" font-bold">{product.title}</h3>
-                <p className=" px-2 line-clamp-3">{product.description}</p>
-                <p className=" font-medium">$ {product.price}</p>
+              <div className=" flex flex-col items-center gap-5 my-3">
+                <h3 className=" font-bold mt-2 text-center">{product.title}</h3>
+                <div className=" flex gap-5">
+                  <p className=" font-medium">$ {product.price}</p>
+                  <div className=" flex items-center gap-1">
+                    <img
+                      className=" w-4"
+                      src="https://svgsilh.com/svg/775819.svg"
+                      alt=""
+                    />
+                    <p className=" font-medium">{product.rating}</p>
+                  </div>
+                  {/* <p className=" px-2 line-clamp-3">{product.description}</p> */}
+                </div>
                 <Link
-                  className=" px-2 py-1 bg-black text-xl text-white font-semibold rounded-lg hover:opacity-80"
+                  className=" px-2 py-1 bg-black text-base text-white font-semibold rounded-lg hover:opacity-80"
                   to={`/productos/${product.id}`}
                 >
                   Ver producto

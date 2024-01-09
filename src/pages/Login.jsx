@@ -10,8 +10,8 @@ export default function Login() {
         src="https://www.svgrepo.com/show/8646/login.svg"
         alt=""
       />
-      <Link to={"/"}>Ingresar</Link>
-      <Link to={"/productos"}>Productos</Link>
+      {/* <Link to={"/"}>Ingresar</Link>
+      <Link to={"/productos"}>Productos</Link> */}
       <button
         onClick={() => {
           nagivate("/");
