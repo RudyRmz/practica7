@@ -20,7 +20,7 @@ export default function Productos() {
           return (
             <article
               key={`prod-${product.id}`}
-              className=" border border-black max-w-60 max-h-80 rounded-lg "
+              className=" border shadow-lg max-w-60 max-h-80 rounded-lg "
             >
               <img className=" w-full h-2/5" src={product.thumbnail} alt="" />
               <div className=" flex flex-col items-center gap-5 my-3">
