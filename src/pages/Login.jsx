@@ -1,4 +1,5 @@
 import { Link, useNavigate } from "react-router-dom";
+import LoginFormRHF from "../components/LoginFormRHF";
 
 export default function Login() {
   const nagivate = useNavigate();
@@ -20,6 +21,8 @@ export default function Login() {
       >
         Ingresar
       </button>
+
+      <LoginFormRHF />
     </div>
   );
 }

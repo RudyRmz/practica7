@@ -2,7 +2,7 @@ import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 
 export default function DetalleProducto() {
-  const [product, setProduct] = useState([]);
+  const [product, setProduct] = useState({});
   const { id } = useParams();
 
   useEffect(() => {
